@@ -1,0 +1,30 @@
+[
+  {
+    "type": "fiction",
+    "icon": "Fiction.svg"
+  },
+  {
+    "type": "drama",
+    "icon": "Drama.svg"
+  },
+  {
+    "type": "humor",
+    "icon": "Humour.svg"
+  },
+  {
+    "type": "politics",
+    "icon": "Politics.svg"
+  },
+  {
+    "type": "philosophy",
+    "icon": "Philosophy.svg"
+  },
+  {
+    "type": "history",
+    "icon": "History.svg"
+  },
+  {
+    "type": "adventure",
+    "icon": "Adventure.svg"
+  }
+]

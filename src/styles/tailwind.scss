@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Montserrat;
+  src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("/assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --bg-color: #FFF;
+  --theme-color: #000;
+  --font-color: #333;
+  --font-family: Montserrat;
+  --grey-light: #EEE;
+  --grey-dark: #444;
+  --theme-name: "default";
+}
+
+body[data-theme="majorelle"] {
+  --bg-color: #F8F7FF;
+  --bg-pattern: url("/assets/images/majorelle/Pattern.svg");
+  --theme-color: #5E56E7;
+  --font-color: #333;
+  --grey-light: #F0F0F6;
+  --grey-dark: #A0A0A0;
+  --theme-name: "majorelle";
+}
+
+body {
+  background: var(--bg-color) !important;
+  color: var(--font-color);
+  font-family: var(--font-family, serif);
+  font-size: 16px;
+}
+
+h1, h2 {
+  color: var(--theme-color);
+  font-weight:600;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.site-hero-section {
+  background-image: var(--bg-pattern, none);
+}
+
+.sticky.top-0 {
+  background: var(--bg-color);
+}
+
+.search-input {
+  background-color: var(--grey-light);
+  &:focus,
+  &:active,
+  &:not(:placeholder-shown) {
+    border-color: var(--theme-color);
+  }
+}
+
+.loader {
+  background-color: var(--theme-color);
+  color: #FFF;
+}
+
+.book-card {
+  font-size: 12px;
+
+  .name {
+    font-weight: bold;
+    max-height: calc(1.5em * 2);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .author-name {
+    color: #c4c4c4;
+  }
+}
